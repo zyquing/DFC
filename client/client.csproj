@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\loginLeft.png" />
+    <Resource Include="images\loginLeftDown.png" />
+    <Resource Include="images\loginMid.png" />
+    <Resource Include="images\loginUp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

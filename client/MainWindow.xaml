@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Login" Height="450" Width="540">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Image Stretch="Fill" Width ="Auto" Source="images/loginUp.png"/>
+        </DockPanel>
+        <Image Grid.Row="1" Stretch="Fill" Width ="Auto" Source="images/loginMid.png"/>
+        <DockPanel Grid.Row="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="8,10,0,0"  VerticalAlignment="Top" Width="41" Source="images/loginLeft.png"/>
+                <TextBox Grid.Row="0" Grid.Column="2" FontSize="18" Height="40"/>
+                <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="8,10,0,0"  VerticalAlignment="Top" Width="41" Source="images/loginLeftDown.png"/>
+                <TextBox Grid.Row="1" Grid.Column="2" FontSize="18" Height="40"/>
+                <Button Grid.Row="2" Grid.ColumnSpan="4" FontSize="18" Content="登录" Height="40" Width="100" BorderThickness="0">
+                    <Button.Background>
+                        <SolidColorBrush Color="#FF2499E2" Opacity="0.6"/>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Column="0" Content="注册" Background="White" FontSize="15" Margin="0,29.4,46.4,0.4" Grid.Row="3" BorderThickness="0"/>
+            </Grid>
+
+
+        </DockPanel>
     </Grid>
 </Window>
